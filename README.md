@@ -7,11 +7,11 @@ Link: https://meditation-app-kappa.vercel.app/
 
 # Table of Contents
 * Getting Started
-Features
-Built With
-Contributing
-License
-Getting Started
+* Features
+* Built With
+* Contributing
+* License
+# Getting Started
 To use the app, simply navigate to the live demo or clone this repository and run the following command in your terminal:
 
 sql
