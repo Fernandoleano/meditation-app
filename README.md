@@ -1,4 +1,5 @@
-#Meditation App
+# Meditation App
+
 This is a simple meditation app that allows users to set a duration for their meditation and start, stop, reset, and add time to the timer. It also features a meditation log where users can track their meditation sessions.
 
 Table of Contents
