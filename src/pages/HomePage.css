@@ -71,6 +71,29 @@ body {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
+  .mediation-log-btn {
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+
   .quotes {
     background-color: #333;
     padding: 20px;

@@ -65,8 +65,8 @@ const HomePage = () => {
         <p>Find your inner peace with our guided meditation sessions.</p>
         <Link to="/meditation">
           <button>Start a Session</button>
-          <div>
-            <Link to="/meditation-log">View Meditation Log</Link>
+          <div className="meditation-log-btn">
+            <Link to="/meditation-log" className="btn">View Meditation Log</Link>
           </div>
         </Link>
       </div>
