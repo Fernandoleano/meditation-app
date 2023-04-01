@@ -63,6 +63,9 @@ function MeditationLog() {
           ))}
         </tbody>
       </table>
+      <div className="home-btn">
+        <a href="/">Go back to home page</a>
+      </div>
     </div>
   );
 }
