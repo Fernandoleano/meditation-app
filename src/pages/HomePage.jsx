@@ -7,6 +7,7 @@ const HomePage = () => {
   const heroRef = useRef(null);
   const testimonialsRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [quote, setQuote] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,6 +37,27 @@ const HomePage = () => {
     setIsVisible(false);
   };
 
+  const quotes = [
+    "Your present circumstances don't determine where you can go; they merely determine where you start.",
+    "Believe in yourself! Have faith in your abilities! Without a humble but reasonable confidence in your own powers you cannot be successful or happy.",
+    "I have not failed. I've just found 10,000 ways that won't work.",
+    "If you want to achieve greatness stop asking for permission.",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "You miss 100% of the shots you don’t take.",
+    "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.",
+    "What you get by achieving your goals is not as important as what you become by achieving your goals.",
+    "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "It does not matter how slowly you go as long as you do not stop."
+  ];
+
+  function generateQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    const randomQuote = quotes[randomIndex];
+    setQuote(randomQuote);
+  }
+
+  // const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
   return (
     <div>
       <div className="hero" ref={heroRef}>
@@ -62,6 +84,12 @@ const HomePage = () => {
           <button>Start Meditating Today</button>
         </Link>
       </div>
+      <div className="quotes">
+        <h1>Here are some quotes to get motivated!</h1>
+        <button onClick={generateQuote}>Get Motivated!</button>
+        <p>{quote}</p>
+        {/* Your meditation timer and other components go here */}
+    </div>
       <div className="testimonials" ref={testimonialsRef}>
         <h2 onMouseEnter={handleTestimonialsHover} onMouseLeave={handleTestimonialsLeave} className={isVisible ? 'visible' : ''}>What Our Users Are Saying</h2>
         <div className="testimonial" onMouseEnter={handleTestimonialsHover} onMouseLeave={handleTestimonialsLeave}>
