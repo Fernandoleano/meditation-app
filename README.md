@@ -5,8 +5,8 @@ This is a simple meditation app that allows users to set a duration for their me
 # Play with it here!
 Link: https://meditation-app-kappa.vercel.app/
 
-Table of Contents
-Getting Started
+# Table of Contents
+* Getting Started
 Features
 Built With
 Contributing
